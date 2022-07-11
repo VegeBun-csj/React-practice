@@ -5,18 +5,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="parent">
+          <div className="child1">first</div>
+          <div className="child2">second</div>
+          <div className="child3">third</div>
+        </div>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        Hello Web3, welcome to become a Web3 blockchain full stack developer !!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );

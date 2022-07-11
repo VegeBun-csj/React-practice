@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,11 +22,73 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.App-header{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.parent{
+  /* 表示当前是一个flex容器， 其中的子容器就是flex item */
+  display: flex;
+  /* row表示按照行的方式展示 */
+  /* flex-direction: row; */
+  /* row-direction表示按照行相反的方向展示 */
+  /* flex-direction: row-reverse; */
+
+  /* 按照列的方向展示 */
+  /* flex-direction:column; */
+  /* 按照列的相反方向展示 */
+  /* flex-direction:column-reverse; */
+
+  /* 确保felx子元素在超过父元素宽度的时候，可以自适应去下一行 */
+  /* flex-wrap: wrap; */
+
+  /* flex-direction和flex-wrap可以合并来写 */
+  /* flex-flow: row wrap; */
+
+  align-items: center;
+  justify-content: center;
+}
+
+.child1{
+  background-color: #61dafb;
+  border: 1px solid;
+  margin: 1px;
+  /* width: 700px; */
+  /* 可以按照比例分配flex水平或者垂直空间大小 */
+  /* flex-grow: 1; */
+
+  flex: 1 1 auto
+}
+
+.child2{
+  background-color: #61dafb;
+  border: 1px solid;
+  margin: 1px;
+  /* width: 700px; */
+
+  /* flex-basis: 600px; */
+  /* flex-shrink: 30px; */
+  /* 可以按照比例分配flex水平或者垂直空间大小 */
+  flex: 2 1 auto;
+}
+
+.child3{
+  background-color: #61dafb;
+  border: 1px solid;
+  margin: 1px;
+  flex: 2 1 auto
+}
+
 
 @keyframes App-logo-spin {
   from {
